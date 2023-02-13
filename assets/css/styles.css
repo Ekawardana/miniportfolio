@@ -10,11 +10,15 @@
       Purple: hsl(250, 66%, 75%)
       Pink: hsl(356, 66%, 75%)
       Teal: hsl(174, 63%, 62%)
+      Light State Blue (239, 100, 70)
+      Emerald (139, 68, 56)
+      Black Rusian (240, 3, 13)
+      Astral (210, 45, 40)
   */
 
-  --hue: 258;
-  --sat: 63%;
-  --lig: 62%;
+  --hue: 210;
+  --sat: 45%;
+  --lig: 40%;
 
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
@@ -312,7 +316,8 @@ body.dark-theme{
 }
 
 .filters-button:hover{
-  background-color: var(--body-color);
+  background-color: var(--first-color-alt);
+  color: #fff;
 }
 
 
@@ -472,7 +477,8 @@ body.dark-theme{
 /* Activate button filter */
 
 .filter-tab-active{
-  background-color: var(--body-color);
+  background-color: var(--first-color);
+  color: #fff;
 }
 
 /*=============== FOOTER ===============*/
