@@ -112,11 +112,17 @@ body.dark-theme{
 ==========*/
 .dark-theme .button-gray{
   background-color: var(--container-color);
+  color: #fff;
 }
 
 .dark-theme .button-gray:hover{
   background-color: var(--first-color);
 }
+
+.dark-theme i .ri-telegram-line{
+  background-color: var(--first-color-alt);
+}
+
 
 .dark-theme .filters-content{
   background-color: var(--container-color);
@@ -208,7 +214,7 @@ body.dark-theme{
 }
 
 .profile-social-link{
-  font-size: 1.25rem;
+  font-size: 1.80rem;
   color: var(--title-color);
   transition: .3s;
 }
@@ -280,12 +286,12 @@ body.dark-theme{
 }
 
 .button-gray{
-  background-color: var(--text-color-lighten);
-  color: var(--title-color);
+  background-color: var(--first-color);
+  color: var(--container-color);
 }
 
 .button-gray:hover{
-  background-color: var(--text-color-light);
+  background-color: var(--first-color-alt);
 }
 
 /*=============== FILTERS TABS ===============*/

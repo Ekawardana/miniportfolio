@@ -13,6 +13,7 @@
 
     <!-- Css Ku -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
 
     <title>Eka Wardana</title>
 </head>
@@ -28,7 +29,9 @@
                 <!-- Foto Profile -->
                 <div class="profile-border">
                     <div class="profile-perfil">
-                        <img src="assets/img/profile.png" alt="profile" />
+                        <a href="assets/img/profile.png" data-lightbox="roadtrip">
+                            <img src="assets/img/profile.png" alt="profile" />
+                        </a>
                     </div>
                 </div>
 
@@ -334,8 +337,9 @@
                         <div class="sertifikat-modal">
                             <span class="sertifikat-subtitle">Sertifikat</span>
                             <h3 class="sertifikat-title">Sertifikat Analisis Sistem</h3>
-                            <a href="#" class="button sertifikat-button button-small">
-                                <i class="ri-link"></i>
+                            <a href="assets/img/Sertifikat/bnsp.jpg" class="button sertifikat-button button-small"
+                                data-lightbox="galeria">
+                                <i class="ri-eye-fill"></i> Lihat
                             </a>
                         </div>
                     </article>
@@ -345,8 +349,9 @@
                         <div class="sertifikat-modal">
                             <span class="sertifikat-subtitle">Sertifikat</span>
                             <h3 class="sertifikat-title">Sertifikat Pengetahuan Database</h3>
-                            <a href="#" class="button sertifikat-button button-small">
-                                <i class="ri-link"></i>
+                            <a href="assets/img/Sertifikat/sbd.jpg" data-lightbox="galeria"
+                                class="button sertifikat-button button-small">
+                                <i class="ri-eye-fill"></i> Lihat
                             </a>
                         </div>
                     </article>
@@ -356,8 +361,9 @@
                         <div class="sertifikat-modal">
                             <span class="sertifikat-subtitle">Sertifikat</span>
                             <h3 class="sertifikat-title">Sertifikat Course PHP</h3>
-                            <a href="#" class="button sertifikat-button button-small">
-                                <i class="ri-link"></i>
+                            <a href="assets/img/Sertifikat/php.jpg" class="button sertifikat-button button-small"
+                                data-lightbox="galeria">
+                                <i class="ri-eye-fill"></i> Lihat
                             </a>
                         </div>
                     </article>
@@ -367,8 +373,9 @@
                         <div class="sertifikat-modal">
                             <span class="sertifikat-subtitle">Sertifikat</span>
                             <h3 class="sertifikat-title">Sertifikat UI/UX Design</h3>
-                            <a href="#" class="button sertifikat-button button-small">
-                                <i class="ri-link"></i>
+                            <a href="assets/img/Sertifikat/UX.jpg" data-lightbox="galeria"
+                                class="button sertifikat-button button-small">
+                                <i class="ri-eye-fill"></i> Lihat
                             </a>
                         </div>
                     </article>
@@ -389,6 +396,7 @@
     <!-- JS Ku -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.js"></script>
     <script>
         const sr = ScrollReveal({
             origin: 'top',
@@ -419,6 +427,16 @@
         })
         sr.reveal('.filters', {
             delay: 950
+        })
+
+        /*=============== LIGHT BOX ===============*/
+        lightbox.option({
+            'resizeDuration': 150,
+            'showImageNumberLabel': true,
+            'disableScrolling': true,
+            'alwaysShowNavOnTouchDevices': false,
+            'wrapAround': false,
+            'fitImagesInViewport': true
         })
     </script>
 

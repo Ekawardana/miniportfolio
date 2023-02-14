@@ -67,3 +67,5 @@ themeButton.addEventListener('click', () => {
 // sr.reveal('.profile-buttons', {delay: 800})
 // sr.reveal('.filters-content', {delay: 900})
 // sr.reveal('.filters', {delay: 1000})
+
+
