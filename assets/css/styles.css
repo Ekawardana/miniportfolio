@@ -18,10 +18,10 @@
 
   --hue: 250;
   --sat: 66%;
-  --lig: 75%;
+  --lig: 79%;
 
-  --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  --first-color: hsl(var(--hue), var(--sat), 62%);
+  --first-color-alt: hsl(var(--hue), var(--sat), 50%); /* -4% */
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
@@ -180,8 +180,8 @@ body.dark-theme{
 }
 
 .profile-perfil{
-  width: 200px;
-  height: 200px;
+  width: 145px;
+  height: 145px;
   background: linear-gradient(180deg, 
               hsla(var(--hue), var(--sat), var(--lig), 1) 50%, 
               hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
@@ -190,6 +190,11 @@ body.dark-theme{
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+
+.profile-perfil img{
+  margin-bottom: -7px;
+  width: 138px;
 }
 
 .profile-name{
