@@ -13,12 +13,12 @@
       Light State Blue (239, 100, 70)
       Emerald (139, 68, 56)
       Black Rusian (240, 3, 13)
-      Astral (210, 45, 40)
+      Astral (210, 45, 40)hsl(30, 91, 50)
   */
 
-  --hue: 210;
-  --sat: 45%;
-  --lig: 40%;
+  --hue: 250;
+  --sat: 66%;
+  --lig: 75%;
 
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
@@ -94,7 +94,7 @@ img {
 }
 
 .change-theme:hover{
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 
 
@@ -116,7 +116,7 @@ body.dark-theme{
 }
 
 .dark-theme .button-gray:hover{
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
 }
 
 .dark-theme i .ri-telegram-line{
@@ -169,7 +169,7 @@ body.dark-theme{
 }
 
 .profile-border{
-  border: 3.5px solid var(--first-color);
+  border: 3.5px solid var(--first-color-alt);
   justify-self: center;
   width: 165px;
   height: 165px;
@@ -180,20 +180,16 @@ body.dark-theme{
 }
 
 .profile-perfil{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background: linear-gradient(180deg, 
-              hsla(var(--hue), var(--sat), var(--lig), 1) 0%, 
+              hsla(var(--hue), var(--sat), var(--lig), 1) 50%, 
               hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-}
-
-.profile-perfil img{
-  width: 138px;
 }
 
 .profile-name{
@@ -264,7 +260,7 @@ body.dark-theme{
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   color: #fff;
   padding: 1rem 1.5rem;
   border-radius: .5rem;
@@ -277,7 +273,7 @@ body.dark-theme{
 }
 
 .button:hover{
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color);
 }
 
 .button-small{
@@ -286,12 +282,12 @@ body.dark-theme{
 }
 
 .button-gray{
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   color: var(--container-color);
 }
 
 .button-gray:hover{
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color);
 }
 
 /*=============== FILTERS TABS ===============*/
@@ -322,7 +318,7 @@ body.dark-theme{
 }
 
 .filters-button:hover{
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color);
   color: #fff;
 }
 
@@ -483,7 +479,7 @@ body.dark-theme{
 /* Activate button filter */
 
 .filter-tab-active{
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   color: #fff;
 }
 
