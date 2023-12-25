@@ -16,9 +16,9 @@
       Astral (210, 45, 40)hsl(30, 91, 50)
   */
 
-  --hue: 250;
-  --sat: 66%;
-  --lig: 79%;
+  --hue: 221;
+  --sat: 86%;
+  --lig: 38%;
 
   --first-color: hsl(var(--hue), var(--sat), 62%);
   --first-color-alt: hsl(var(--hue), var(--sat), 50%); /* -4% */
@@ -61,7 +61,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .3s; /* For animation dark mode */
+  transition: .4s; /* For animation dark mode */
 }
 
 h1, h2, h3 {
